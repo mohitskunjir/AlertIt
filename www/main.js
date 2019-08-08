@@ -526,7 +526,7 @@ var GetMapDataService = /** @class */ (function () {
     // 35.154.168.17
     // 10.20.6.118
     // tslint:disable-next-line:no-inferrable-types
-    GetMapDataService.ip = 'https://webappalertit.azurewebsites.net';
+    GetMapDataService.ip = 'webappalertit.azurewebsites.net';
     // tslint:disable-next-line:no-inferrable-types
     GetMapDataService.port = '443';
     // tslint:disable-next-line:no-inferrable-types
