@@ -12,7 +12,7 @@ export class GetMapDataService {
   // 35.154.168.17
   // 10.20.6.118
    // tslint:disable-next-line:no-inferrable-types
-  public static ip: string = 'https://webappalertit.azurewebsites.net';
+  public static ip: string = 'webappalertit.azurewebsites.net';
   // tslint:disable-next-line:no-inferrable-types
   public static port: string = '443';
   // tslint:disable-next-line:no-inferrable-types
