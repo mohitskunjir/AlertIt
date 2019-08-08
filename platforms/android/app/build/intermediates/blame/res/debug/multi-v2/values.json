@@ -1,0 +1,92 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Work\\NodeJS\\AlertIT\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\Work\\NodeJS\\AlertIT\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "-1,2,-1",
+                        "startColumns": "-1,4,-1",
+                        "startOffsets": "-1,55,-1",
+                        "endColumns": "-1,45,-1",
+                        "endOffsets": "-1,96,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,119,165",
+                        "endColumns": "63,45,58",
+                        "endOffsets": "114,160,219"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Work\\NodeJS\\AccidentAlert\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\Work\\NodeJS\\AccidentAlert\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "-1,2,-1",
+                        "startColumns": "-1,4,-1",
+                        "startOffsets": "-1,55,-1",
+                        "endColumns": "-1,51,-1",
+                        "endOffsets": "-1,102,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,119,171",
+                        "endColumns": "63,51,58",
+                        "endOffsets": "114,166,225"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Work\\NodeJS\\Cordova\\AccidentAlert\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\Work\\NodeJS\\Cordova\\AccidentAlert\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "165,55,106",
+                        "endColumns": "63,50,58",
+                        "endOffsets": "224,101,160"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,119,170",
+                        "endColumns": "63,50,58",
+                        "endOffsets": "114,165,224"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Work\\Hackathon\\AccidentAlert\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\Work\\Hackathon\\AccidentAlert\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "165,55,106",
+                        "endColumns": "63,50,58",
+                        "endOffsets": "224,101,160"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,119,170",
+                        "endColumns": "63,50,58",
+                        "endOffsets": "114,165,224"
+                    }
+                }
+            ]
+        }
+    ]
+}

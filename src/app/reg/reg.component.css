@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+	margin:0px;
+	padding:0px;
+}
+
+#main-container {
+
+    margin-top: 80px;
+
+  /*background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 0%; */
+
+  /* background-image: url('../images/low rez image .png'); */
+  /* background-color: aqua; */
+}
+
+ .center-container {
+   
+    position: relative;
+    height: 10%;
+    width: 340px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.09);
+}
+.rows {
+    width: auto;
+}
+.field {
+    position: relative;
+    height:40px; 
+    /* margin-bottom:35px;  */
+    font-family: Arial;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+  top: 0px;
+  bottom: 10px;
+  left: 0px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+#select {
+    margin-top:5px;
+}
+
+option {
+background-color: transparent;
+border-color: black;
+padding: 5px;
+min-height: 30px;
+}
+
+option:first-child {
+    display: none;
+}
+
+input {
+    text-indent: 66px;
+    font-size: 16px;
+    width:300px;
+    height:100%;
+    background: transparent;
+    border:0px;
+    border-bottom: 1px solid #000000;
+    outline:none;
+    padding-top:10px;
+    color:#000000;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+   transition: background-color 5000s ease-in-out 0s;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 0px;
+  top: 18px;
+  transition: 0.2s ease all;
+  color:#000000;
+}
+
+button.btn-default{
+    background: black;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 0;
+    width: 150px;
+   
+}
+
+.register{
+    color:#000000;
+    padding-top:5px;
+}
+
+.register a{
+    color:#000000;
+}
+select{
+    width: 150px;
+    background-color: transparent;
+    border-color: black;
+    height: 44px;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-left: 145px;
+    border-width:2px;
+}
+.validation_div{
+    margin-top: -27px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1;
+    margin-left:-12px; /* Firefox */
+  }

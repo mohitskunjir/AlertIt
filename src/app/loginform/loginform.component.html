@@ -1,0 +1,63 @@
+<div class="container" id="main-container">
+  <div class="row">
+      <div class="col-md-12 offset-md-3 col-xs-12 offset-xs-4 center-container">
+                <form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >  
+                  <div class="field form-group">
+                      <input  class="form-control"  type="text" name="emailIdL"  id="emailIdL" required="required" (change)="clearEmail($event.target.value)"  ngModel emailIdL>
+                      <span class="floating-label" >Email address:</span>
+                      <p name="emailValidL" id="emailValidL" style="color: red">{{this.emailValidL}}</p>
+                  </div> 
+                  <div class="field form-group">
+                    <input    class="form-control"  type="password" name = "passwdL" id="passwdL" (change)="clear()" ngModel required>
+                    <span class="floating-label" >Password</span>
+                    <p name="passwd1ValidL" id="passwd1ValidL" style="color: red">{{this.passwd1ValidL}}</p>
+                </div>  
+                <div class="form-group form-check">
+                 
+                    <input class="form-check-input" type="checkbox" (change)="clear()" /> Remember me
+                    <!-- <span class="floating-label" >Email</span> -->
+                </div>
+                <div class="col-md-12 text-center">
+                <button type="submit" class=" btn btn-default"  >Log in </button>
+                <br/>
+                </div>                                          
+              </form>
+              <div class="col-md-12 col=xs-12 text-center register">
+                  Don't have an account? <a routerLink='/register' >Not a Member? Register</a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!-- 
+
+
+<div class="container-fluid" style="margin-top: 60px;">
+  <h1 align="center" style="color:black">Login</h1>
+  
+  <form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+    <div class="form-group">
+      <label for="emailIdL">Email address:</label>
+      <input type="email" class="form-control"  name="emailIdL" id="emailIdL" required="required" (change)="clear()"  ngModel emailIdL>
+      <p name="emailValidL" id="emailValidL" style="color: red">{{this.emailValidL}}</p>
+    </div>
+    <div class="form-group">
+      <label for="passwdL">Password:</label>
+      <input type="password" class="form-control" name = "passwdL" id="passwdL" required="required" (change)="clear()"  ngModel passwdL>
+      <p name="passwd1ValidL" id="passwd1ValidL" style="color: red">{{this.passwd1ValidL}}</p>
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" (change)="clear()" /> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Log in</button>
+    <br/>
+    <a routerLink='/register' >Not a Member? Register</a>
+    </form>
+  
+</div> -->

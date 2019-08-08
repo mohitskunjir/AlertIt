@@ -1,0 +1,81 @@
+<div class="container-fluid fixed-top map-class" >
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+      <agm-map  [latitude]="lat" [longitude]="lng" [zoom]="13" (mapClick)="mapClicked($event)">
+        <agm-marker [latitude]="lat" [longitude]="lng" [label]="victimLabel" [opacity]="0.6" (markerClick)="clickedMarker()">
+          <agm-info-window>
+              <strong>Current Location</strong>
+              <br/>
+              <span>Latitude: {{this.lat}}</span>
+              <br/>
+              <span>Longitude: {{this.lng}}</span>
+            </agm-info-window>
+        </agm-marker>
+        <agm-direction [origin]="this.origin" [destination]="this.destination">
+            <!-- <agm-info-window>
+              <strong>{{this.currentData.name}}</strong>
+              <br/>
+              <span>Latitude: {{this.currentData.lat}}</span>
+              <br/>
+              <span>Longitude: {{this.currentData.lng}}</span>
+            </agm-info-window> -->
+        </agm-direction>
+      </agm-map> 
+    </div>
+  </div>
+    <div  class="row text-center  btn-group btn-grp ">
+      <div class="col-md-3 col-xs-3 w-25" >
+          <button class="btn btn-primary"  name = "hospital" value="hospital" (click)="getdata('Hospital')">Hospital</button>
+      </div>
+      <div class="col-md-3 col-xs-3 w-25">
+          <button class="btn btn-primary"  name = "bloodbank" value="bloodbank" (click)="getdata('Blood Bank')">Blood Bank</button>
+      </div>
+      <div class="col-md-3 col-xs-3 w-25" >
+          <button class="btn btn-primary" name = "police" value="police" (click)="getdata('Police Station')">Police Station</button>
+      </div>
+      <div class="col-md-3 col-xs-3 w-25">
+        <button class="btn btn-primary"  name = "fire" value="fire" (click)="getdata('Fire Station')">Fire Station</button>
+      </div>
+  </div>
+</div>
+
+<div class="container-fluid" style="margin-top: calc(3.63em + 265px);">
+    <div class="row card-deck">
+        <div *ngFor="let hospData of hospData" class="col-md-4 col-xs-4 card">
+          <div class="card-header text-center" >
+            <strong>
+              {{hospData.name}}
+            </strong>
+          </div>
+          <div class="card-body text-center" >
+            {{hospData.address}}
+          </div>
+          <div class="card-footer text-center">
+                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal" (click)="myMap(hospData)"><strong>Confirm this {{this.query}}</strong></button>
+          </div>
+        </div>
+  </div>
+</div>
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog text-center">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+		 <h4 class="modal-title">Response</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+         
+        </div>
+        <div class="modal-body">
+          <a target="_blank" href={{this.url}}>Map Link</a>
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+
+
+

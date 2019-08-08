@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    position: relative;
+    background-image: url(./assets/background1.jpg);
+    background-position: stretch;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+  

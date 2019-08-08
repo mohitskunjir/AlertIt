@@ -1,0 +1,63 @@
+<div class="container-fluid" id="main-container">
+  <div class="">
+      <div class="col-md-12 offset-md-4 col-xs-12 offset-xs-4  center-container">
+              <form name="myForm" #userregister = "ngForm" (ngSubmit) = "onSubmit(userregister.value)">
+                  <div class="field form-group">
+                      <input   [(ngModel)]="model.hospn" class="form-control"  type="text" name="hospn" id="hospn"  #hospn="ngModel" ngx-google-places-autocomplete placeholder="" #placesRef="ngx-places" (onAddressChange)="handleAddressChange($event)"  required>
+                      <span class="floating-label" >Name</span>  
+                      <div *ngIf="hospn.invalid && (hospn.dirty || hospn.touched)" >
+                          <div style="color:red" *ngIf="hospn.errors.required">Name is required.</div>
+                      </div>
+                  </div> 
+
+                    <div class="field form-group">
+                        <input  class="form-control" type="number" [(ngModel)]="model.vehicle_count"  (change)="onChangeCount($event.target.value)" name="vehicle_count" id="vehicle_count" #vehicle_count="ngModel" required>
+                        <span class="floating-label">Number of vehicles </span>
+                        <div *ngIf="vehicle_count.invalid && (vehicle_count.dirty || vehicle_count.touched)" >
+                                <div style="color:red" *ngIf="vehicle_count.errors.required">Vehicle Count is required.</div>
+                        </div>
+            
+                    </div> 
+
+                     <div class="field form-group">
+                        <input [(ngModel)]="model.mobile" class="form-control" type="text" (keypress)="keyPress($event)"name="mobile" id="mobile" #mobile="ngModel" required>
+                            <span class="floating-label">Mobile</span>
+                            <div *ngIf="mobile.invalid && (mobile.dirty || mobile.touched)" class="">
+                                <div style="color:red" *ngIf="mobile.errors.required && mobile.length!=10 ">Mobile number is required.</div>
+                            </div>
+                     </div>
+
+                  <div class="field form-group">
+                    <input   [(ngModel)]="model.email" class="form-control"  type="email" name="email" id="email" (focusout)="onChangeEmail($event.target.value)"   #email="ngModel"  required>
+                    <span class="floating-label" >Email</span>
+                    <div *ngIf="email.invalid && (email.dirty || email.touched)" >
+                        <div style="color:red"  *ngIf="email.errors.required" >{{this.emailValid}}</div>
+                    </div>
+                  </div>  
+                                           
+                  <div class="field form-group">
+                      <input  [(ngModel)]="model.pwd"  class="form-control" type="password" name="pwd" id="pwd" #pwd="ngModel" required>
+                      <span class="floating-label">Password</span>
+                      <div *ngIf="pwd.invalid && (pwd.dirty || pwd.touched)" class="">
+                        <div style="color:red" *ngIf="pwd.errors.required">Password is required.</div>
+                      </div>
+                  </div>
+
+                  <div class="field form-group">
+                    <input  [(ngModel)]="model.cpwd"  class="form-control" type="password" name="cpwd" id="cpwd" #cpwd="ngModel" required>
+                    <span class="floating-label">Confirm Password</span>
+                    <div *ngIf="cpwd.invalid && (cpwd.dirty || cpwd.touched)" class="">
+                        <div style="color:red" *ngIf="cpwd.errors.required">Confirm Password is required.</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-default"  [disabled]="!button_disabled()" >REGISTER</button>
+                   </div>                            
+              </form>
+              <div class="col-md-12 text-center register">
+                  Already have an account? <a routerLink='/login'><b>Login here</b></a>
+              </div>
+      </div>
+  </div>
+</div> 

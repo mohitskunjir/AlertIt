@@ -1,0 +1,29 @@
+.map-class {
+  position: fixed;
+  padding: 0;
+  margin-top: 3.63em; 
+  z-index: 1;
+}
+
+agm-map { 
+  height: 215px;
+}
+
+.table { 
+  background-color: aliceblue;
+}
+
+.btn {
+  margin: 10px 5px;
+  font-size: 12px;
+  padding: 5px
+}
+
+.btn:hover {
+  color: black;
+}
+
+.btn:active {
+  color: black;
+} 
+
