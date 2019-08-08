@@ -399,8 +399,6 @@ var DirMapComponent = /** @class */ (function () {
                         alert('Error: The request to get user location timed out.');
                         break;
                 }
-                _this.lat = 18.5204;
-                _this.lng = 73.8567;
                 _this.hospData = [];
                 _this.obj.navigate(['/latlng']);
             }, { timeout: 20000, enableHighAccuracy: _get_map_data_service__WEBPACK_IMPORTED_MODULE_3__["GetMapDataService"].accuracy });
