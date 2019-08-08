@@ -8,13 +8,13 @@ import { HttpClient } from '@angular/common/http';
 export class GetMapDataService {
 
   // tslint:disable-next-line:no-inferrable-types
-  public static prot: string = 'http';
+  public static prot: string = 'https';
   // 35.154.168.17
   // 10.20.6.118
    // tslint:disable-next-line:no-inferrable-types
-  public static ip: string = '127.0.0.1';
+  public static ip: string = 'https://webappalertit.azurewebsites.net';
   // tslint:disable-next-line:no-inferrable-types
-  public static port: string = '8000';
+  public static port: string = '443';
   // tslint:disable-next-line:no-inferrable-types
   public static accuracy: boolean = true;
 
