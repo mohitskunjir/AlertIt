@@ -9,9 +9,9 @@ const routes = require('./lib/routes');
 
 const app = express();
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 443;
 
-const ip = "127.0.0.1";
+const ip = "https://webappalertit.azurewebsites.net";
 
 // 172.31.25.42
 // 10.20.6.118
