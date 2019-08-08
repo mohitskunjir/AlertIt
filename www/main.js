@@ -225,6 +225,8 @@ var AppModule = /** @class */ (function () {
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(Routes),
                 _agm_core__WEBPACK_IMPORTED_MODULE_4__["AgmCoreModule"].forRoot({
                     apiKey: 'AIzaSyCyZA_78gN4lQ5j6rIrEHJ640yvBnmJADU'
+                    //AIzaSyCP6bhFPs90anDdC1dL2IH76yRhh00XRtY
+                    //AIzaSyCyZA_78gN4lQ5j6rIrEHJ640yvBnmJADU
                 }),
                 agm_direction__WEBPACK_IMPORTED_MODULE_5__["AgmDirectionModule"],
             ],
@@ -420,6 +422,8 @@ var DirMapComponent = /** @class */ (function () {
         this.currentHospData = data;
         this.origin = { lat: this.currentHospData.lat, lng: this.currentHospData.lng };
         this.destination = { lat: this.lat, lng: this.lng };
+        // AIzaSyCP6bhFPs90anDdC1dL2IH76yRhh00XRtY
+        // AIzaSyCyZA_78gN4lQ5j6rIrEHJ640yvBnmJADU
         this.url = 'https://www.google.com/maps/dir/?api=1&origin=' + this.currentHospData.lat + ',' + this.currentHospData.lng + '&origin_place_id=' + this.currentHospData.placeId + '&destination=' + this.lat + ',' + this.lng + '&travelmode=driving&key=AIzaSyCyZA_78gN4lQ5j6rIrEHJ640yvBnmJADU';
         // window.alert('Alert sent to corresponding ' + this.query + '.\n <a href="' + text + '" target="_blank"> Map Link </a>');
         var url = _get_map_data_service__WEBPACK_IMPORTED_MODULE_3__["GetMapDataService"].prot + '://' + _get_map_data_service__WEBPACK_IMPORTED_MODULE_3__["GetMapDataService"].ip + ':' + _get_map_data_service__WEBPACK_IMPORTED_MODULE_3__["GetMapDataService"].port + '/latlng/hosp/' + this.currentHospData.placeId + ',' + this.lat + ',' + this.lng;
@@ -518,13 +522,13 @@ var GetMapDataService = /** @class */ (function () {
         this.http.get('/hosp/' + placeId);
     };
     // tslint:disable-next-line:no-inferrable-types
-    GetMapDataService.prot = 'http';
+    GetMapDataService.prot = 'https';
     // 35.154.168.17
     // 10.20.6.118
     // tslint:disable-next-line:no-inferrable-types
-    GetMapDataService.ip = '127.0.0.1';
+    GetMapDataService.ip = 'https://webappalertit.azurewebsites.net';
     // tslint:disable-next-line:no-inferrable-types
-    GetMapDataService.port = '8000';
+    GetMapDataService.port = '443';
     // tslint:disable-next-line:no-inferrable-types
     GetMapDataService.accuracy = true;
     GetMapDataService = GetMapDataService_1 = __decorate([
@@ -1058,7 +1062,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Work\NodeJS\AlertIT\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\Work\AlertIT\src\main.ts */"./src/main.ts");
 
 
 /***/ })
