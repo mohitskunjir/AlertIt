@@ -46,8 +46,6 @@ export class DirMapComponent implements OnInit {
 					  alert('Error: The request to get user location timed out.');
 					  break;
 				}
-				this.lat = 18.5204;
-				this.lng = 73.8567;
 				this.hospData = [];
 				this.obj.navigate(['/latlng']);
 			},
