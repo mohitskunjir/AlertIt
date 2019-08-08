@@ -11,7 +11,7 @@ const app = express();
 
 const port = process.env.PORT || 443;
 
-const ip = "https://webappalertit.azurewebsites.net";
+const ip = "webappalertit.azurewebsites.net";
 
 // 172.31.25.42
 // 10.20.6.118
