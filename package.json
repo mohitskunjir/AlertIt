@@ -10,7 +10,7 @@
 			"scripts": {
 						"ng": "ng build",
 						"start": "ng build && nodemon",
-						"build": "ng build && ng serve --host 0.0.0.0 --ssl true",
+						"build": "ng build",
 						"test": "ng test",
 						"lint": "ng lint",
 						"e2e": "ng e2e",
